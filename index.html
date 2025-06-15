@@ -36,8 +36,12 @@
     <header class="bg-white shadow-sm py-4 px-6 md:px-8 lg:px-12 rounded-b-lg">
         <nav class="flex items-center justify-between flex-wrap container mx-auto">
             <div class="flex items-center flex-shrink-0 text-gray-900 mr-6">
-                <!-- Logo: Correctly linking to the uploaded image -->
-                <img src="invac_logo.jpg" alt="INVAC Logo" class="h-16 w-auto mr-3">
+                <!-- Logo: IMPORTANT: The 'src' attribute has been changed.
+                     You MUST save the logo image (Gemini_Generated_Image_f68q0lf68q0lf68q.jpg-f067e79c-b4ea-49d0-8877-efb70781f917)
+                     to your computer, rename it to 'invac_logo.jpg' (or any simple name),
+                     and then upload that 'invac_logo.jpg' file to the SAME FOLDER
+                     as your index.html file in your GitHub repository. -->
+                <img src="invac_logo.jpg" alt="INVAC Logo" class="h-64 w-auto mr-3"> <!-- Changed h-32 to h-64 for doubled size -->
                 <!-- Removed text "INVAC Tech" as it's part of the logo now -->
             </div>
             <div class="block lg:hidden">
@@ -47,24 +51,24 @@
             </div>
             <div id="mobile-menu" class="w-full hidden lg:block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div class="text-sm lg:flex-grow">
-                    <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 mr-6 py-2 px-3 rounded-md transition duration-200 ease-in-out">
+                    <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 mr-6 py-8 px-12 rounded-md transition duration-200 ease-in-out font-bold">
                         Home
                     </a>
-                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 mr-6 py-2 px-3 rounded-md transition duration-200 ease-in-out">
+                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 mr-6 py-8 px-12 rounded-md transition duration-200 ease-in-out font-bold">
                         About Us
                     </a>
-                    <a href="#features" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 mr-6 py-2 px-3 rounded-md transition duration-200 ease-in-out">
+                    <a href="#features" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 mr-6 py-8 px-12 rounded-md transition duration-200 ease-in-out font-bold">
                         Our Approach
                     </a>
-                    <a href="#services" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 mr-6 py-2 px-3 rounded-md transition duration-200 ease-in-out">
+                    <a href="#services" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 mr-6 py-8 px-12 rounded-md transition duration-200 ease-in-out font-bold">
                         Services
                     </a>
-                    <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 py-2 px-3 rounded-md transition duration-200 ease-in-out">
+                    <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 py-8 px-12 rounded-md transition duration-200 ease-in-out font-bold">
                         Contact
                     </a>
                 </div>
                 <div>
-                    <button class="inline-block text-sm px-6 py-3 leading-none border-2 rounded-lg text-indigo-600 border-indigo-600 hover:border-transparent hover:text-white hover:bg-indigo-600 mt-4 lg:mt-0 transition duration-300 ease-in-out shadow-md hover:shadow-lg">
+                    <button class="inline-block text-base px-8 py-4 leading-none border-2 rounded-lg text-indigo-600 border-indigo-600 hover:border-transparent hover:text-white hover:bg-indigo-600 mt-4 lg:mt-0 transition duration-300 ease-in-out shadow-md hover:shadow-lg">
                         Get Started
                     </button>
                 </div>
@@ -75,9 +79,9 @@
     <main class="container mx-auto py-12 px-6 md:px-8 lg:px-12">
 
         <!-- Hero Section -->
-        <section id="home" class="text-center py-20 bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-xl shadow-xl mb-12">
+        <section id="home" class="text-center py-20 bg-gradient-to-br from-yellow-400 to-orange-500 text-white rounded-xl shadow-xl mb-12">
             <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
-                Innovative Software Solutions & Consulting
+                INVAC Tech Solutions
             </h1>
             <p class="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-up">
                 Empowering businesses with cutting-edge technology and expert guidance.
@@ -98,9 +102,14 @@
                     Our team of seasoned professionals is committed to delivering excellence, driving innovation, and ensuring our clients achieve their technological and business objectives. We pride ourselves on building lasting partnerships through reliable service and measurable results.
                 </p>
             </div>
-            <div class="bg-gray-100 p-8 rounded-xl shadow-lg flex items-center justify-center">
-                <!-- Placeholder Image for About Section -->
-                <img src="invac_logo.jpg" alt="INVAC Logo" class="h-16 w-auto mr-3">
+            <div class="bg-gray-100 p-8 rounded-xl shadow-lg flex flex-col items-center justify-center text-gray-800">
+                <!-- Placeholder for Machine Running Image -->
+                <img src="https://placehold.co/300x200/4F46E5/FFFFFF?text=Machine+Running" alt="Machine Running Illustration" class="w-full h-auto rounded-lg object-cover mb-4">
+                <div class="text-center font-bold text-xl md:text-2xl mt-4 space-y-2">
+                    <p>Innovation</p>
+                    <p>Values</p>
+                    <p>Collaboration</p>
+                </div>
             </div>
         </section>
 
@@ -141,39 +150,46 @@
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- Primary Services Section -->
         <section id="services" class="py-12 mb-12">
-            <h2 class="text-4xl font-bold text-center mb-10 text-gray-900">Our Services</h2>
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-900">Primary Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service Card 1: Software Development -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
-                    <div class="text-indigo-600 mb-4">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Custom Software Development</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Tailored software solutions, including web applications, mobile apps, and enterprise systems, built to your exact specifications.
-                    </p>
-                </div>
-                <!-- Service Card 2: IT Consulting -->
+                <!-- Service Card 1: Consulting & Transformation -->
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
                     <div class="text-indigo-600 mb-4">
                         <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.55 23.55 0 0110.198 1.155 100 100 0 005 3h14.004c.732 0 1.33.606 1.258 1.338l-.663 7.954z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.198 1.155L5 3v13.5A2.5 2.5 0 007.5 19H17a2.5 2.5 0 002.5-2.5V3h-.004l-2.738-1.583a.75.75 0 00-.736.007L10.198 1.155z"></path></svg>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">IT Consulting & Strategy</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Expert advice and strategic planning for technology adoption, digital transformation, and IT infrastructure optimization.
-                    </p>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Consulting & Transformation</h3>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+                        <li>Tech Professional Services</li>
+                        <li>Technology Consulting</li>
+                        <li>Digital Transformation Services</li>
+                        <li>RPO and Recruitment Consulting</li>
+                    </ul>
                 </div>
-                <!-- Service Card 3: System Integration -->
+                <!-- Service Card 2: Application Development -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Application Development</h3>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+                        <li>Application Development and Modernization</li>
+                        <li>Enterprise Application Development</li>
+                        <li>Salesforce Solutions</li>
+                    </ul>
+                </div>
+                <!-- Service Card 3: Managed Services & IT Ops -->
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
                     <div class="text-indigo-600 mb-4">
                         <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 8a8 8 0 01-8-8H4a10 10 0 0010 10V21m-4-1h4m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4z"></path></svg>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">System Integration & Migration</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Seamless integration of diverse systems and smooth migration services to modernize your technological ecosystem.
-                    </p>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Managed Services & IT Ops</h3>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+                        <li>Managed Services</li>
+                        <li>IT Infrastructure Management</li>
+                        <li>IT Service Desk</li>
+                    </ul>
                 </div>
             </div>
         </section>
